@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harsh Bhavsar | Graduate Generative AI Developer</title>
+<meta name="description" content="Portfolio of Harsh Bhavsar, MSc Data Science graduate seeking Graduate/Internship role in Generative AI Developer">
+<style>
+:root{--g:#00ff88;--g2:#00b85c;--bg:#030504;--card:rgba(0,255,136,.05);--tx:#d6ffe9;--mut:#7fa893}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+#bg{position:fixed;inset:0;z-index:0}
+nav{position:fixed;top:0;width:100%;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;background:linear-gradient(#030504,transparent);backdrop-filter:blur(6px)}
+nav b{color:var(--g);font-family:monospace;letter-spacing:2px}
+nav a{color:var(--tx);text-decoration:none;margin-left:22px;font-size:.9rem;transition:.3s}
+nav a:hover{color:var(--g);text-shadow:0 0 10px var(--g)}
+main{position:relative;z-index:10}
+section{min-height:100vh;padding:110px 8vw 60px;display:flex;flex-direction:column;justify-content:center}
+h1{font-size:clamp(2.6rem,8vw,6rem);line-height:1.05;text-shadow:0 0 30px rgba(0,255,136,.4)}
+h1 em{color:var(--g);font-style:normal}
+h2{font-size:2rem;color:var(--g);margin-bottom:30px;font-family:monospace}
+h2::before{content:'> ';opacity:.6}
+.tag{font-family:monospace;color:var(--g);margin-bottom:14px}
+.sub{font-size:1.25rem;color:var(--mut);max-width:640px;margin:18px 0 30px}
+.type{border-right:2px solid var(--g);padding-right:4px;animation:blink .8s infinite}
+@keyframes blink{50%{border-color:transparent}}
+.btn{display:inline-block;padding:12px 28px;border:1px solid var(--g);color:var(--g);text-decoration:none;border-radius:4px;margin-right:12px;transition:.3s;font-family:monospace}
+.btn:hover,.btn.f{background:var(--g);color:#000;box-shadow:0 0 25px var(--g)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid rgba(0,255,136,.25);border-radius:10px;padding:24px;transition:transform .15s,box-shadow .3s;transform-style:preserve-3d;will-change:transform}
+.card:hover{box-shadow:0 0 30px rgba(0,255,136,.25);border-color:var(--g)}
+.card h3{color:var(--g);margin-bottom:6px;transform:translateZ(30px)}
+.card p,.card li{color:var(--mut);font-size:.95rem}
+.card ul{padding-left:18px;margin-top:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chips span{font:.78rem monospace;padding:4px 10px;border:1px solid rgba(0,255,136,.4);border-radius:20px;color:var(--g)}
+.wip{display:inline-block;font:.72rem monospace;background:#ffcc00;color:#000;padding:2px 8px;border-radius:3px;margin-bottom:8px}
+.meta{font:.8rem monospace;color:var(--g2);margin-bottom:8px}
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.reveal.on{opacity:1;transform:none}
+footer{position:relative;z-index:10;text-align:center;padding:30px;color:var(--mut);font:.8rem monospace}
+@media(max-width:700px){nav a{margin-left:10px;font-size:.75rem}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+
+<nav><b>&lt;HB/&gt;</b><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
+
+<main>
+<section id="home">
+  <p class="tag">// Hello, world. I'm</p>
+  <h1>HARSH<br><em>BHAVSAR</em></h1>
+  <p class="sub"><span class="type" id="typed"></span></p>
+  <p class="sub" style="font-size:1rem;margin-top:0">MSc Data Science graduate, University of Roehampton. Seeking a Graduate / Internship Generative AI Developer role in Canary Wharf, London.</p>
+  <div><a class="btn f" href="#projects">View Projects</a><a class="btn" href="#contact">Contact Me</a></div>
+</section>
+
+<section id="about" class="reveal">
+  <h2>About</h2>
+  <div class="card" style="max-width:850px">
+    <p>I'm an MSc Data Science graduate with a focus on Machine Learning, Deep Learning and Natural Language Processing. I build end-to-end ML pipelines in Python and I'm now moving into Generative AI: LLMs, retrieval-augmented generation and prompt engineering. Before my MSc I spent 1.5+ years in IT, automation and network security, where I learned to build reliable systems that people depend on.</p>
+    <div class="chips"><span>London, UK</span><span>CGPA 9.27/10 (BSc)</span><span>Python</span><span>NLP</span><span>GCP</span></div>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><h3>AI / ML</h3><div class="chips"><span>Generative AI</span><span>NLP</span><span>Deep Learning</span><span>Machine Learning</span><span>scikit-learn</span><span>Model Evaluation</span></div></div>
+    <div class="card"><h3>Learning Now</h3><div class="chips"><span>LLMs</span><span>RAG</span><span>LangChain</span><span>FAISS / Chroma</span><span>Hugging Face</span><span>Prompt Engineering</span></div></div>
+    <div class="card"><h3>Programming</h3><div class="chips"><span>Python</span><span>SQL</span><span>Bash</span><span>PowerShell</span><span>Git / GitHub</span></div></div>
+    <div class="card"><h3>Data &amp; Cloud</h3><div class="chips"><span>Pandas</span><span>NumPy</span><span>MySQL</span><span>PostgreSQL</span><span>BigQuery</span><span>GCP</span><span>Linux</span></div></div>
+    <div class="card"><h3>Visualisation</h3><div class="chips"><span>Power BI</span><span>Tableau</span><span>Matplotlib</span><span>Seaborn</span><span>Excel</span></div></div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card"><h3>Hybrid Crypto Fraud &amp; Risk Detection</h3><div class="meta">MSc Project</div>
+      <p>Engineered risk features for 10,000+ wallet addresses from transaction-graph data, targeting 90%+ detection accuracy, with explainable risk scores.</p>
+      <div class="chips"><span>Python</span><span>SQL</span><span>NLP</span><span>Pandas</span><span>Seaborn</span></div></div>
+    <div class="card"><h3>Sales Forecasting &amp; Predictive Analytics</h3><div class="meta">MSc Project</div>
+      <p>End-to-end supervised ML pipeline reaching 88% test-set performance. Benchmarked 6+ algorithms with 5-fold cross-validation; forecasts published to Power BI.</p>
+      <div class="chips"><span>Python</span><span>scikit-learn</span><span>Power BI</span></div></div>
+    <div class="card"><h3>Document Q&amp;A Chatbot (RAG)</h3><span class="wip">IN PROGRESS</span>
+      <p>Chatbot answering questions over PDFs using embeddings, a FAISS vector store and an LLM API.</p>
+      <div class="chips"><span>LangChain</span><span>FAISS</span><span>LLM API</span><span>Streamlit</span></div></div>
+    <div class="card"><h3>Financial News Summariser</h3><span class="wip">IN PROGRESS</span>
+      <p>Transformer-based summarisation of financial news, evaluated with ROUGE.</p>
+      <div class="chips"><span>Hugging Face</span><span>NLP</span><span>Python</span></div></div>
+    <div class="card"><h3>Financial &amp; Sales Analytics</h3><div class="meta">Personal Project</div>
+      <p>Power BI dashboard over a 50,000+ row dataset with 20+ SQL queries and DAX measures, cutting estimated manual reporting time by 70%.</p>
+      <div class="chips"><span>SQL</span><span>Power BI</span><span>DAX</span></div></div>
+    <div class="card"><h3>HR Attrition Analytics</h3><div class="meta">Personal Project</div>
+      <p>Analysed 5,000 employee records in SQL; Tableau dashboard revealed a 23% higher attrition rate in one business unit.</p>
+      <div class="chips"><span>SQL</span><span>Tableau</span><span>Excel</span></div></div>
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <h2>Experience &amp; Education</h2>
+  <div class="grid">
+    <div class="card"><h3>Desktop Support Engineer</h3><div class="meta">Sol Spot Pvt Ltd | May 2024 – Dec 2024</div>
+      <ul><li>Cut manual workload 40% with Power Automate and PowerShell across 80+ workstations.</li><li>Raised SLA compliance to 95% with SQL/Excel dashboards.</li><li>Reduced malware incidents 60% via endpoint security.</li></ul></div>
+    <div class="card"><h3>Network Security Engineer (Intern)</h3><div class="meta">Ashtech Pvt Ltd | Sept 2023 – Feb 2024</div>
+      <ul><li>Maintained 99% uptime on 50+ endpoints.</li><li>Implemented 30+ security patches.</li><li>Produced monthly leadership reports.</li></ul></div>
+    <div class="card"><h3>MSc Data Science</h3><div class="meta">University of Roehampton | 2025 – 2026</div><p>Machine Learning, Deep Learning, NLP, Statistics, Big Data Analytics.</p></div>
+    <div class="card"><h3>BSc Information Technology</h3><div class="meta">Ganpat University | 2021 – 2024</div><p>CGPA 9.27/10.</p></div>
+    <div class="card"><h3>Certifications</h3><ul><li>Microsoft Power BI Data Analyst (PL-300)</li><li>Google Data Analytics Certificate</li><li>Python Bootcamp (Udemy)</li><li>Google Cloud: Compute Engine</li><li>Cisco Intro to Cybersecurity</li></ul></div>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+  <p class="sub">Open to Graduate and Internship Generative AI roles in Canary Wharf, London.</p>
+  <div>
+    <a class="btn f" href="mailto:bhavsarharsh0904@gmail.com">Email Me</a>
+    <a class="btn" href="https://www.linkedin.com/in/harsh-bhavsar-059b90250" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/HarshB227" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <p class="sub" style="font-family:monospace;font-size:.95rem">+44 7375 109422 | bhavsarharsh0904@gmail.com</p>
+</section>
+</main>
+<footer>&copy; 2026 Harsh Bhavsar. All rights reserved.</footer>
+
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+
+// typing
+const roles=['Graduate Generative AI Developer','LLM &amp; RAG Builder','NLP &amp; Machine Learning Engineer'].map(s=>s.replace('&amp;','&'));
+const el=document.getElementById('typed');let r=0,c=0,del=false;
+(function t(){const w=roles[r];el.textContent=w.slice(0,c);
+ if(!del&&c===w.length){del=true;return setTimeout(t,1500)}
+ if(del&&c===0){del=false;r=(r+1)%roles.length}
+ c+=del?-1:1;setTimeout(t,del?35:70)})();
+
+// reveal
+const io=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('on')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(s=>io.observe(s));
+
+// 3D tilt cards
+document.querySelectorAll('.card').forEach(cd=>{
+ cd.addEventListener('mousemove',e=>{const b=cd.getBoundingClientRect();
+  const x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;
+  cd.style.transform=`perspective(700px) rotateY(${x*14}deg) rotateX(${-y*14}deg) scale(1.03)`});
+ cd.addEventListener('mouseleave',()=>cd.style.transform='');
+});
+
+// three.js scene
+const cv=document.getElementById('bg');
+const ren=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
+ren.setPixelRatio(Math.min(devicePixelRatio,2));
+const scene=new THREE.Scene();
+const cam=new THREE.PerspectiveCamera(60,1,.1,100);cam.position.z=8;
+const G=0x00ff88;
+const N=1500,pos=new Float32Array(N*3);
+for(let i=0;i<N*3;i++)pos[i]=(Math.random()-.5)*40;
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:G,size:.05,transparent:true,opacity:.7}));
+scene.add(pts);
+let mx=0,my=0;
+addEventListener('mousemove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+function size(){ren.setSize(innerWidth,innerHeight);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()}
+addEventListener('resize',size);size();
+const clock=new THREE.Clock();
+(function loop(){const t=clock.getElapsedTime(),sy=scrollY/innerHeight;
+  pts.rotation.y=t*.02+sy*.3;
+ cam.position.x+=(mx*2-cam.position.x)*.05;cam.position.y+=(-my*2-cam.position.y)*.05;cam.lookAt(0,0,0);
+ ren.render(scene,cam);requestAnimationFrame(loop)})();
+</script>
+</body>
+</html>
