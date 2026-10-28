@@ -5,8 +5,8 @@ export function Hero() {
     <section className="relative h-screen w-full overflow-hidden">
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="/hero-image.jpg"
-          alt="Harsh Bhavsar"
+          src={`${import.meta.env.BASE_URL}hero-image.jpg`}
+          alt=""
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/50 md:bg-black/40" />
